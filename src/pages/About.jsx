@@ -6,7 +6,7 @@ function About() {
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         <div className="md:w-1/2">
           <img
-            src="path/to/your/photo.jpg"
+            src="src/assets/profile.jpg"
             alt="Your Name"
             className="rounded-full w-48 h-48 mx-auto md:mx-0"
           />
@@ -19,7 +19,7 @@ function About() {
           </p>
           <br />
           <p>
-            Today, as one of the founders of Greatminds Inc., I am dedicated to delivering innovative AI solutions tailored to customer management needs. With a blend of deep technical knowledge and strategic vision, I am committed to driving success and innovation in the digital age.
+            Today, as one of the founders of <a href='http://www.greatminds-inc.com'>Greatminds Inc.</a>, I am dedicated to delivering innovative AI solutions tailored to customer needs. With a blend of deep technical knowledge and strategic vision, I am committed to driving success and innovation in the digital age.
           </p>
           <div className="mt-6 flex space-x-4">
             <a
