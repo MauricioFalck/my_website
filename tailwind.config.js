@@ -10,6 +10,7 @@ export default {
         customNavHoverText: '#3B82F6',      // Blue 400 equivalent for navigation hover text
         customFooterText: '#9CA3AF',        // Gray 400 equivalent for footer text
         buttonText: '#FFFFFF',              // White for primary button text
+        borderColor: '#2563EB',             // Blue 600 for primary button background
         primaryButtonBg: '#2563EB',         // Blue 600 for primary button background
         primaryButtonHoverBg: '#1D4ED8',    // Blue 700 for primary button hover background
         secondaryButtonBg: '#4B5563',       // Gray 700 for secondary button background

@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen bg-neutral-800 items-center justify-center">
-        <div className="text-customBodyText bg-stone-900 shadow-lg rounded-lg mx-auto my-7 w-full max-w-6xl h-auto flex flex-col min-h-full overflow-y-auto" style={{ marginTop: '2%', marginBottom: '2%', minHeight: '90vh' }}>
+        <div className="text-customBodyText bg-stone-900 shadow-lg rounded-lg mx-auto my-7 w-full max-w-6xl flex flex-col" style={{ marginTop: '2%', marginBottom: '2%', minHeight: '90vh' }}>
           <Header />
           <main className="flex-grow container mx-auto px-4 py-6">
             <Routes>
