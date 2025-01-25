@@ -1,27 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import f from "../assets/f.png"
-import al from "../assets/al.png"
-import c from "../assets/c.png"
-import k from "../assets/k.png"
+import logo from "../assets/logo.png"
 
 
 function Header() {
   return (
-    <header className="bg-white shadow">
-      <div className="container mx-auto px-4 py-6 flex justify-between items-center">
+    <header>
+      <div className="container mx-auto px-4 py-6 flex justify-between items-center bg-neutral-900">
         <div className="text-3xl font-bold flex">
-          <img src={f} alt="Logo" className="w-35 h-12 mr-2" />
-          <img src={al} alt="Logo" className="w-35 h-12 mr-2" />
-          <img src={c} alt="Logo" className="w-35 h-12 mr-2" />
-          <img src={k} alt="Logo" className="w-35 h-12 mr-2" />
+          <img src={logo} alt="Logo" className="w-35 h-12 ml-5 mr-2" />
         </div>
         <nav>
-          <ul className="flex space-x-4">
-            <li><Link to="/about" className="hover:text-blue-500">About Me</Link></li>
-            <li><Link to="/portfolio" className="hover:text-blue-500">Portfolio</Link></li>
-            <li><Link to="/resume" className="hover:text-blue-500">Resume</Link></li>
-            <li><Link to="/contact" className="hover:text-blue-500">Contact Me</Link></li>
+          <ul className="flex space-x-4 mr-5 text-customNavText">
+            <li><Link to="/" className="hover:text-customNavHoverText">Home</Link></li>
+            <li><Link to="/about" className="hover:text-customNavHoverText">About Me</Link></li>
+            <li><Link to="/portfolio" className="hover:text-customNavHoverText">Portfolio</Link></li>
+            <li><Link to="/contact" className="hover:text-customNavHoverText">Contact Me</Link></li>
           </ul>
         </nav>
       </div>
