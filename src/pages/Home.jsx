@@ -1,4 +1,5 @@
 import React from 'react';
+import profilePic from "../assets/mauricio-home.jpg"
 
 function Home() {
   return (
@@ -8,8 +9,8 @@ function Home() {
           <div className="relative">
             <div>
               <img
-                src="src/assets/profile.jpg"
-                alt="Your Name"
+                src={profilePic}
+                alt="Mauricio Falck"
                 className="rounded-full w-48 h-48 mx-auto md:mx-0 relative"
               />
             </div>
