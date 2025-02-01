@@ -15,14 +15,19 @@ function Portfolio() {
       language: 'Python',
       githubLink: 'https://github.com/yourusername/project-two'
     },
-    // Add more projects here
+    {
+      name: 'Project Three',
+      description: 'This is a brief description of Project Three.',
+      language: 'Java',
+      githubLink: 'https://github.com/yourusername/project-three'
+    },
   ];
 
   return (
-    <section className="my-8">
+    <section className="flex-grow overflow-y-auto my-8 mx-20">
       <div className="container mx-auto">
         <h2 className="text-3xl font-semibold text-customHeaderText mb-6 text-center">My Portfolio</h2>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center space-y-4">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}

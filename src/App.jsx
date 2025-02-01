@@ -10,10 +10,11 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-neutral-800 items-center justify-center">
-        <div className="text-customBodyText bg-stone-900 shadow-lg rounded-lg mx-auto my-7 w-full max-w-6xl flex flex-col" style={{ marginTop: '2%', marginBottom: '2%', minHeight: '90vh' }}>
-          <Header />
-          <main className="flex-grow container mx-auto px-4 py-6">
+      <div className="flex flex-col min-h-screen bg-neutral-800">
+        {/* Wrapper with fixed marginTop for Header */}
+        <div className="flex flex-col flex-grow mx-auto my-7 w-full max-w-6xl bg-stone-900 text-customBodyText shadow-lg rounded-lg" style={{ marginTop: '5%', marginBottom: '5%' }}>
+          <Header className="mt-5" />
+          <main className="flex-grow container mx-auto px-4 py-6 overflow-y-auto" style={{ minHeight: '60vh' }}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
@@ -21,7 +22,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>
-          <Footer />
+          <Footer className="mt-5" />
         </div>
       </div>
     </Router>

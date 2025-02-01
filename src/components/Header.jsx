@@ -8,7 +8,7 @@ function Header() {
     <header>
       <div className="container mx-auto px-4 py-6 flex justify-between items-center bg-neutral-900">
         <div className="text-3xl font-bold flex">
-          <img src={logo} alt="Logo" className="w-35 h-12 ml-5 mr-2" />
+          <img src={logo} alt="Logo" className="w-35 h-20 ml-5 mr-2" />
         </div>
         <nav>
           <ul className="flex space-x-4 mr-5 text-customNavText">
