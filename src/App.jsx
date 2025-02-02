@@ -9,10 +9,10 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/my_website">
       <div className="flex flex-col min-h-screen bg-neutral-800">
         {/* Wrapper with fixed marginTop for Header */}
-        <div className="flex flex-col flex-grow mx-auto my-7 w-full max-w-6xl bg-stone-900 text-customBodyText shadow-lg rounded-lg" style={{ marginTop: '5%', marginBottom: '5%' }}>
+        <div className="flex flex-col flex-grow mx-auto my-7 w-full max-w-6xl bg-stone-900 text-customBodyText shadow-lg rounded-lg" style={{ marginTop: '4%', marginBottom: '4%' }}>
           <Header className="mt-5" />
           <main className="flex-grow container mx-auto px-4 py-6 overflow-y-auto" style={{ minHeight: '60vh' }}>
             <Routes>
