@@ -1,4 +1,5 @@
 import React from 'react';
+import linkedin from '../assets/linkedin-logo.png';
 
 function Contact() {
   return (
@@ -17,12 +18,14 @@ function Contact() {
         <p className="text-lg text-customBodyText mb-6">
           You can also reach out to me via LinkedIn. I would be thrilled to be a part of your network!
         </p>
-        <a
-          href="https://www.linkedin.com/in/MauricioFalck"
-          className="text-customNavHoverText hover:underline text-lg transition duration-300 ease-in-out"
-        >
-          Connect on LinkedIn
-        </a>
+        <div className="flex justify-center items-center">
+          <a
+            href="https://www.linkedin.com/in/MauricioFalck"
+            className="text-customNavHoverText hover:underline text-lg transition duration-300 ease-in-out"
+          >
+            <img src={linkedin} alt="LinkedIn Logo" className="w-8 h-8 mr-2 bg-white rounded" />
+          </a>
+        </div>
       </div>
     </section>
   );

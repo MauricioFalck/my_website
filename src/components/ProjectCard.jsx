@@ -1,4 +1,5 @@
 import React from 'react';
+import github from '../assets/github-logo.png';
 
 function ProjectCard({ name, description, language, githubLink }) {
     return (
@@ -9,12 +10,14 @@ function ProjectCard({ name, description, language, githubLink }) {
                     <p className="text-customBodyText mb-2">{description}</p>
                     <p className="text-customSubtitleTextBlue mb-4">Language: {language}</p>
                 </div>
-                <a
-                    href={githubLink}
-                    className="text-primaryButtonText bg-primaryButtonBg hover:bg-primaryButtonHoverBg px-4 py-2 rounded inline-block"
-                >
-                    View on GitHub
-                </a>
+                {githubLink && (
+                    <a
+                        href={githubLink}
+                        className="px-2 py-2 rounded inline-block"
+                    >
+                        <img src={github} alt="GitHub Logo" className="w-6 h-6 mr-2" />
+                    </a>
+                )}
             </div>
         </div>
     );

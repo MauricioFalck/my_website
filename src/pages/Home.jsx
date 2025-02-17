@@ -32,18 +32,14 @@ function Home() {
           </p>
           <div className="mt-10 flex space-x-4 ">
             <a
-              href="path/to/your/cv.pdf"
-              download
+              href="/my_website/assets/cv.pdf"
+              target='_blank'
+              type="application/pdf"
               className="bg-primaryButtonBg text-buttonText px-4 py-2 rounded hover:bg-primaryButtonHoverBg"
             >
               Download CV
             </a>
-            <a
-              href="my_website/contact"
-              className="bg-secondaryButtonBg text-buttonText px-4 py-2 rounded hover:bg-secondaryButtonHoverBg"
-            >
-              Contact Me
-            </a>
+
           </div>
         </div>
       </div>
